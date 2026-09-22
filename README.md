@@ -1,8 +1,40 @@
-# React + Vite
+# JuRiArtt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tienda online sencilla: portada, catálogo, ficha en tarjeta, carrito y páginas de contacto y perfil.
 
-Currently, two official plugins are available:
+La portada dice “Mi Tienda” y lleva a `/products`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Rutas y piezas
+
+| Ruta / componente | Qué es |
+| --- | --- |
+| `pages/Home.tsx` | Portada |
+| `pages/Products.tsx` | Catálogo |
+| `pages/Contact.tsx` | Contacto |
+| `pages/Profile.tsx` | Perfil |
+| `components/ProductCard.tsx` | Tarjeta de producto |
+| `components/Cart.tsx` | Carrito |
+| `components/Navbar.tsx` | Barra |
+| `context/CartContext.tsx` | Estado del carrito |
+
+## Stack
+
+- React 18 y TypeScript en las páginas
+- Vite
+- React Router 6
+- Bootstrap 5
+
+## Cómo ejecutarlo
+
+```bash
+npm install
+npm run dev
+```
+
+```bash
+npm run build
+npm run preview
+npm run lint
+```
+
+El carrito vive en memoria a través de `CartContext` mientras la pestaña está abierta.
