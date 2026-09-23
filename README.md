@@ -1,30 +1,30 @@
 # JuRiArtt
 
-Tienda online sencilla: portada, catálogo, ficha en tarjeta, carrito y páginas de contacto y perfil.
+A small online store: landing page, catalog, product card, cart, and contact and profile pages.
 
-La portada dice “Mi Tienda” y lleva a `/products`.
+The landing page says “Mi Tienda” and links to `/products`.
 
-## Rutas y piezas
+## Routes and pieces
 
-| Ruta / componente | Qué es |
+| Route / component | What it is |
 | --- | --- |
-| `pages/Home.tsx` | Portada |
-| `pages/Products.tsx` | Catálogo |
-| `pages/Contact.tsx` | Contacto |
-| `pages/Profile.tsx` | Perfil |
-| `components/ProductCard.tsx` | Tarjeta de producto |
-| `components/Cart.tsx` | Carrito |
-| `components/Navbar.tsx` | Barra |
-| `context/CartContext.tsx` | Estado del carrito |
+| `pages/Home.tsx` | Landing |
+| `pages/Products.tsx` | Catalog |
+| `pages/Contact.tsx` | Contact |
+| `pages/Profile.tsx` | Profile |
+| `components/ProductCard.tsx` | Product card |
+| `components/Cart.tsx` | Cart |
+| `components/Navbar.tsx` | Bar |
+| `context/CartContext.tsx` | Cart state |
 
 ## Stack
 
-- React 18 y TypeScript en las páginas
+- React 18, with TypeScript on the pages
 - Vite
 - React Router 6
 - Bootstrap 5
 
-## Cómo ejecutarlo
+## How to run
 
 ```bash
 npm install
@@ -37,4 +37,4 @@ npm run preview
 npm run lint
 ```
 
-El carrito vive en memoria a través de `CartContext` mientras la pestaña está abierta.
+The cart lives in memory through `CartContext` while the tab stays open.
